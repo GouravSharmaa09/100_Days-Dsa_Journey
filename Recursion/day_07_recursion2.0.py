@@ -58,7 +58,7 @@ print("dek le ab tu khud hi :", result )
 n= input()
 num=n 
 left= 0 
-right = num-1
+right = len(num)-1
 is_palindrome = False
 
 while left<right:
@@ -68,3 +68,22 @@ while left<right:
     left+=1
     right-=1
 print(is_palindrome)        
+
+
+
+
+
+
+
+
+# problem =Array (Half-Reverse) using recursion 
+
+def func(num, left , right ):
+    if left>=right :
+        return 
+    num[left],num[right]= num[right],num[left]
+    func(num, left+1, right-1)
+num= [2,3,4,5,8,6,7]
+func(num,0, (len(num//2))-1)    
+     # num//2 isliye kyuki half reverse krni hai to len(num//2)-1 se back side se right ka half 
+print(num)
