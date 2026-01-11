@@ -20,7 +20,7 @@ def insertion_sort(arr):
                
                 j-=1
                 #  j-=1  check kro ab loop ko 
-                arr[j+1]=key
+      arr[j+1]=key
                 #  j+1 ki value ko key me update kro agr condition satisfy nhi hoti to 
             
     return(arr)
