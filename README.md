@@ -10,6 +10,8 @@ Welcome to my DSA repository! I am documenting my daily progress, logic building
 ---
 
 ## 📅 Recent Milestones
+### Day 23: Solved Search Insert Position
+- Understood that it's essentially a Lower Bound problem . Optimized searching from $O(N)$ to $O(\log N)$.
 
 ### 🔍 Day 21: Binary Search Deep Dive
 - Implemented **Iterative Binary Search** ($O(1)$ space complexity).
