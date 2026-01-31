@@ -1,3 +1,6 @@
+# DAY-26 METHOD 3- DELETE
+# T.C=O(N) 
+
 class node :
     def __init__(self,val):
         self.val=val
