@@ -1,4 +1,4 @@
-# DAY-30    DOUBLY LINKED LIST 
+# DAY-30    DOUBLY LINKED LIST  
 # NOTE- IT STORES PREVIOUS , DATA , OR NEXT ADDRESSS 
 
 # CREATE A NODE :
@@ -14,7 +14,7 @@ class doubly:
     def __init__(self):
         self.head=None
 
-    # INSERT AT HEAD
+# 1 INSERT AT HEAD
     def insert_head(self,val):
         new_node=Node(val)
         if not self.head:
@@ -88,7 +88,7 @@ class doubly:
 # 5. Delete head , end , and between :
 
     
-    def delete_head(self,val):
+    def delete_dll(self,val):
         # case 0 list khali hai to 
         if not self.head:
             print("khali list hai ")
