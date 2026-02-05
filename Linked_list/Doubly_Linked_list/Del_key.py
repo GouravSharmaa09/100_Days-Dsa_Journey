@@ -13,7 +13,7 @@ class solution :
         while curr is not None: 
             if curr.val == key : # codndition 
                 if prev is not None: # agr prev none nhi hai to 
-                    prev.next-=curr.next # prev ke next ko curr ka next se link rko 
+                    prev.next =curr.next # prev ke next ko curr ka next se link rko 
                                  
                 if curr.next is not None: # curr ka next none nhi hai to 
                     curr.next.prev=prev  # next ke prev ko prev bnao 
