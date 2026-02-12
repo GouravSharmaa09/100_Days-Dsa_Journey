@@ -43,5 +43,5 @@ print(phone_alpha(digits))
 
 # output = ['ad', 'ae', 'af', 'bd', 'be', 'bf', 'cd', 'ce', 'cf']
 
-# Time and complexcity = O(4n * n) -->worst case me 4 aplha hoskte hai koi koi keyword me 
-# S.C= O(N)
+# Time and complexcity = O(4n * n) -->worst case me 4 aplha hoskte hai koi koi keyword me  and n digit ki len 
+# S.C= O(N) 
