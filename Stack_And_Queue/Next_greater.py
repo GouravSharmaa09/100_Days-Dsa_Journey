@@ -57,3 +57,34 @@ print(f"NGE:   {sol.next_greater_stack(arr)}")
 
 # Array: [4, 12, 5, 3, 1, 2, 5, 3, 1, 2, 4, 6]
 # NGE:   [12, -1, 6, 5, 2, 5, 6, 4, 2, 4, 6, -1]
+
+
+
+
+# Next greater  Part 2  leat code - 503  
+# in this we find circluar also 
+
+# logic -->  we create a imaginary arr but not perform any type of action (logic i % n )
+
+
+def next_greater_2(nums):
+    stack=[]
+    n=len(nums)
+    ans=[-1]*n # -1 arr 
+
+ # loop for imaginary arr iterte krega same copy arr manege n ke bd isliye 2*n-1 se start hoga loop 
+    for i in range (2*n-1,-1,-1):
+        # i%n ka mtlb hai like 7 pe hai or n = 5 hai real me to 7 % 5 = 2 (no. ka element hai greater)
+        while len(stack)!=0 and stack[-1]<=nums[i%n]:
+            stack.pop()
+        
+        # Hum ans sirf tabhi bharenge jab hum "Real Array" (i < n) mein honge
+        if i < n:
+            if len(stack)!=0:
+                ans[i]=stack[-1]
+
+        stack.append(nums[i%n])
+
+    return ans          
+
+print(next_greater_2([1, 2, 1])) # Output: [2, -1, 2]       
