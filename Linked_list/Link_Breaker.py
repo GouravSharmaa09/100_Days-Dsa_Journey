@@ -31,9 +31,9 @@ class singlylinkedlist:
                 break
             temp=temp.next
 
-        if temp: # agter val equal ke 
+        if temp: # temp exits krta hai to 
             head_2=temp.next # temp ke next ko head 2 bnao 
-            temp.next=None # jo next tha usko none kro or link todo phlevli list se 
+            temp.next=None # jo next tha usko none kro or link todo phle vli list se 
             return head_2 # head 2 do jo ki gli list ka start bhi h 
         else:
 
